@@ -1,0 +1,122 @@
+body {
+  background-image: url('wal.png');
+  background-size: cover;   
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Centraliza toda a estrutura */
+.container-geral {
+    width: 100%;
+    text-align: center;
+}
+
+main, .grade-noticias, footer {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto; /* centraliza horizontalmente */
+}
+
+
+/* ===== Notícias ===== */
+.grade-noticias {
+    width: 80%;
+    margin: 50px auto;
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: left;
+    overflow: hidden;
+}
+
+.cartao-destaque {
+    display: block;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 0 10px #ffffff;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.cartao-destaque img {
+    width: 45%;
+    float: left;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.cartao-destaque h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.cartao-destaque p {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+.btn-leia {
+    display: inline-block;
+    padding: 8px 12px;
+    color: #c00000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cartao {
+    position: relative;
+    display: inline-block;
+    width: 31%;
+    vertical-align: top;
+    margin: 10px;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px #ffffff;
+    height: 530px;
+    overflow: hidden;
+    border:2px solid #c00000;
+}
+
+.cartao img {
+    width: 100%;
+    height: 200px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cartao h3 {
+    color: #ffffff;
+    margin-top: 0;
+    font-weight: bold;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.cartao p {
+    color: #f4f4f4;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.btn-leia1, .btn-leia2, .btn-leia3, .btn-leia4, .btn-leia5, .btn-leia6 {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 8px 12px;
+    color: #c00000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}

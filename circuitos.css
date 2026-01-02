@@ -1,0 +1,74 @@
+/* Coloca uma imagem de fundo fixa, que cobre toda a tela. */
+body {
+  background-image: url('wal.png');
+  background-size: cover;   
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.titulo {
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #d10000;
+}
+
+/*evitar que as bandeiras herdem 400px de largura */
+img {
+  margin-top: 30px;
+  width: 400px; /* <--- Isso deixa a bandeira enorme */
+  height: auto;
+  border: #ffffff 2px solid;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #ffffff;
+}
+
+p {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+section {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.box {
+  display: inline-block;
+  width: 450px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.24);
+  border: 2px solid #888888;
+  box-shadow: 0 2px 10px #d10000;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  margin: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Garante que as bandeiras fiquem no mesmo nível do texto (vertical-align) */
+.box h2 img.bandeira-circuito {
+  display: inline-block;
+  vertical-align: middle; /* Alinha o centro da bandeira com o centro do texto */
+  /* Padronização do Tamanho */
+  width: 50px; 
+  height: 50px;
+  font-size: 0px;
+  margin: 0 5px; /* Espaçamento entre bandeira e texto */
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Ajuste no H2 para garantir que ele separe o título do mapa do circuito */
+.box h2 {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

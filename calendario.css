@@ -1,0 +1,82 @@
+body {
+  background-image: url('wal.png');
+  background-size: cover;   
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.tabela-calendario {
+/* 1. Defina a Largura*/
+  width: 100%;
+  max-width: 1200px; 
+    
+  /* 2. Centraliza */
+  margin: 30px auto; /* 30px de margem em cima/baixo e automático nas laterais */
+  border-collapse: collapse; /* Remove espaços entre células */
+  font-family: 'Roboto', Arial, sans-serif; /* Fonte*/
+/* Removi o display:block para centralizar a tabela*/ 
+}
+
+main h1 {
+  text-align: center; /* Centraliza o título */
+  color: #c00000; /* Cor do texto */
+
+}
+/* Estilo das Células de Cabeçalho (<th>) e Dados (<td>) */
+.tabela-calendario th, 
+.tabela-calendario td {
+  padding: 12px 15px; /* Espaço interno*/
+  border: 1px solid #c00000; /* Borda cinza clara para separar as células */
+  text-align: center; /* Alinhamento do texto à esquerda */
+}
+
+/* Estilo do Cabeçalho da Tabela */
+.tabela-calendario thead th {
+  background-color: #c00000; /* Fundo vermelho da F1 */
+  color: white; /* Texto branco */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Efeito Zebra */
+.tabela-calendario tbody tr:nth-child(even) { /*:indica que estamos aplicando uma condição pescial,nth-child possibilita selecionar um elemento na sua posição entre irmãos, even palavra-chave parar "par"  */
+  background-color: #222; /* Fundo cinza escuro para linhas pares */
+  color:aqua; /* Cor das palavras na coluna par */
+}
+
+.tabela-calendario tbody tr:nth-child(odd) {
+  background-color: #010101; /* Fundo mais escuro para linhas ímpares */
+  color: violet; /* Cor das palavras na coluna ímpar */
+}
+
+.tabela-calendario tbody tr:hover {
+  background-color: #efebeb; /* Fundo cinza médio ao passar o mouse */
+  color: rgb(207, 12, 12); /* Cor do texto ao passar o mouse */
+}
+.tabela-calendario img {
+  width: 50px; /* Largura da imagem */
+  height: auto; /* Altura automática para manter a proporção */
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem na célula */
+}
+.tabela-calendario td:first-child {
+  text-align: center; /* Centraliza o conteúdo da primeira coluna */
+}
+.tabela-calendario td:nth-child(2) {
+  font-weight: bold; /* Deixa o nome do GP em negrito */
+  text-align: left; /* Alinha o nome do GP à esquerda */
+}
+.tabela-calendario td:nth-child(3),
+.tabela-calendario td:nth-child(4),
+.tabela-calendario td:nth-child(5),
+.tabela-calendario td:nth-child(6) {
+  text-align: center; /* Centraliza o conteúdo das colunas de data, local e horário */
+}
+.tabela-calendario td:nth-child(6) {
+  font-style: italic; /* Deixa o horário em itálico */
+}

@@ -1,0 +1,77 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS E CORPO
+   ========================================= */
+body {
+  background-image: url('wal.png');
+  background-size: cover;   
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0;
+  color: #c00000; /* Cor clara para destacar no fundo escuro */
+}
+
+main {
+  padding: 0 16px 40px;
+}
+
+/* SEÇÃO DA TABELA DE CLASSIFICAÇÃO */
+
+.classificacao-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #000000;
+}
+
+.lista-restante {
+  background-color: #fefefe;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(241, 241, 241, 0.1);
+}
+
+.tabela-classificacao {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ffffff;
+  text-align: left;
+}
+
+.tabela-classificacao thead th {
+  background-color: #b30000;
+  color: #ffffff;
+  padding: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.tabela-classificacao tbody td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.tabela-classificacao tbody tr:hover {
+  background-color: #25035e;
+}
+
+/* Destaque para a coluna de pontos */
+.tabela-classificacao td:last-child {
+  font-weight: bold;
+  color: #d30e0e;
+}
+
+.mini-logo {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+}

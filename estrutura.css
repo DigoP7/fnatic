@@ -1,0 +1,193 @@
+/* --- CABEÇALHO E MENU --- */
+.main-header {
+  background-color: #1a1a1a;
+  padding: 0; /* Remova padding vertical para não afetar altura */
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 0; /* Padding aqui para dar respiro */
+}
+
+.site-logo {
+  position: relative;
+  float: left; /* Logo à esquerda */
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 1.2;
+  top: 2px;
+}
+
+.site-logo:hover,
+.site-logo:active {
+  color: #c00000;
+}
+
+/* Lista do Menu (UL) */
+.menu-lista {
+  float: right; /* Menu à direita */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Itens do Menu (LI) */
+.menu-lista > li {
+  display: inline-block; /* Itens lado a lado */
+  margin-left: 20px; /* Espaço entre itens */
+  position: relative; /* Referência para o dropdown */
+}
+
+/* Links do Menu (A) */
+.menu-lista > li > a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  padding: 5px 0;
+}
+
+.menu-lista > li > a:hover {
+  color: #c00000;
+}
+
+/* --- DROPDOWN MENU (A Caixa) --- */
+.dropdown-menu {
+  display: none; /* Escondido */
+  position: absolute; /* Flutua */
+  top: 100%; /* Logo abaixo do pai */
+  left: 50%; /* Centraliza no pai */
+  transform: translateX(-50%); /* Ajuste fino de centro */
+  
+  background-color: #000000;
+  min-width: 150px;
+  padding: 0;
+  z-index: 1000;
+  border: 1px solid #333;
+  border-top: 2px solid #c00000; /* Detalhe visual */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+/* Itens do Dropdown */
+.dropdown-menu li {
+  display: block; /* Um embaixo do outro */
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid #333;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: left; /* Texto alinhado à esquerda */
+  white-space: nowrap; /* Texto não quebra */
+}
+
+.dropdown-menu li a:hover {
+  background-color: #1a1a1a;
+  color: #c00000;
+}
+
+/* Mostrar Dropdown no Hover */
+.dropdown-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Limpador de Float */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* ===== Rodapé ===== */
+
+.site-footer .footer-top {
+    border-top: 2px solid rgba(255, 255, 255, 0.479);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.479);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    text-align: center;
+}
+
+.site-footer {
+    clear: both;
+    margin-top: 50px; /* coloque o espaço que quiser */
+}
+
+/* ZERA TUDO DO UL */
+.footer-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Coloca os itens em linha */
+.footer-links li {
+    display: inline-block;
+    margin: 0 20px;  /* reduz espaçamento lateral */
+    padding: 0;
+}
+
+
+/* Links */
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #c00000;
+    text-decoration: underline;
+}
+
+/* Parte inferior */
+.site-footer .footer-bottom {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    overflow: hidden;
+}
+
+.footer-copy {
+    float: left;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 36px;
+}
+
+.footer-social {
+    float: right;
+    line-height: 36px;
+}
+
+.footer-social .social {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-left: 8px;
+    color: #ffffff;
+}
+
+.footer-social .social:hover {
+    color: #c00000;
+    transform: translateY(-2px);
+}
+
+.footer-social svg {
+    width: 18px;
+    height: 18px;
+}

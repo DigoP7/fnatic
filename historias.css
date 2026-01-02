@@ -1,0 +1,99 @@
+body {
+  background-image: url('wal.png');
+  background-size: cover;   
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Estilos Globais para Main */
+.historia-main {
+    max-width: 1200px;
+    margin: 40px auto; 
+    padding: 0 20px;
+}
+
+.titulo {
+    font-size: 2.5em;
+    color: #c00000; 
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Clearfix para conter os floats dentro do container pai */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Container dos Cards */
+.cards-container {
+    padding-bottom: 50px;
+}
+
+/* Estilo do Card Individual (FLOAT VERSION) */
+.historia-card {
+    /* Define a largura para 3 colunas, levando em conta as margens */
+    width: calc(33.333% - 20px); 
+    float: left; /* ESSENCIAL: Faz o elemento flutuar e ficar lado a lado */
+    margin: 0 10px 30px 10px; /* Margem de 10px de cada lado */
+    
+    /* PADRONIZAÇÃO DE ALTURA: Define uma altura fixa para todos os cards */
+    height: 400px; /* Altura total padronizada para todos os cards */
+    
+    /* Demais estilos de visualização */
+    display: block; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; 
+    background-color: #1a1a1a; 
+    color: #fff;
+    cursor: pointer;
+}
+
+.historia-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 25px #c00000; 
+}
+
+/* Área da Imagem (Placeholder) */
+.card-image-placeholder {
+    width: 100%;
+    height: 180px; /* Altura fixa para as imagens (Ajustei para caber no card total) */
+    background-color: #333; 
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid #c00000; 
+}
+
+/* Conteúdo do Card (Título e Descrição) */
+.card-content {
+    padding: 20px;
+    /* Altura restante: 400px (total) - 180px (imagem) - 3px (borda) = 217px */
+    height: 217px; 
+    overflow: hidden; /* Garante que o texto não "vaze" se for longo demais */
+}
+
+.card-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-content p {
+    font-size: 1em;
+    color: #ccc; 
+    line-height: 1.4;
+}

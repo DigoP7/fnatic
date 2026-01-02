@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  text-align:center;
+  min-height:100vh;
+  background:url(fundo.png)
+  ;background-size:cover;
+  background-position:center
+}
+
+.elementos{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background-color:rgba(255,255,255,0);
+  padding:15px;
+  border-radius:15px;
+  width:20%
+}
+
+fieldset{
+  border:3px solid;
+  border-image:linear-gradient(to right,rgb(255,69,0),rgb(255,174,0)) 1;
+  background-color:transparent;
+  backdrop-filter:blur(10px);
+  padding-top:20px
+}
+
+legend{
+  border:1px solid orangered;
+  padding:10px;
+  text-align:center;
+  background-color:orangered;
+  border-radius:8px;
+  border-image:linear-gradient(to right,rgb(255,69,0),rgb(255,174,0)) 1
+}
+
+.input-box{
+  position:relative;
+  margin-top:20px
+}
+
+fieldset>.input-box:first-of-type{
+  margin-top:0
+}
+
+.gen{
+  color:white;
+  margin-top:20px;
+  padding-bottom:20px
+}
+
+.gen label{
+  display:inline-block;
+  margin-bottom: 15px;
+}
+  
+  .cadastro{
+    background:none;
+    border:none;
+    border-bottom:1px solid white;
+    outline:none;
+    color:white;
+    font-size:15px;
+    width:100%;
+    letter-spacing:2px
+  }
+  
+  .labelinput{
+    position:absolute;
+    top:0px;
+    left:0px;
+    color:white;
+    pointer-events:none;
+    transition:.5s
+  }
+  
+  .cadastro:focus~.labelinput,
+  .cadastro:valid~.labelinput{
+    top:-20px;
+    left:0px;
+    color:orangered;
+    font-size:12px}
+    
+    #data_nascimento{
+      border:none;
+      padding:8px;
+      border-radius:10px;
+      outline:none;
+      font-size:15px
+      ;margin-top:5px
+    }
+    
+    #submit{
+      background-image:linear-gradient(to right,rgb(255,69,0),rgb(255,174,0));
+      width:100%;
+      border:none;
+      padding:15px;
+      color:white;
+      font-size:15px;
+      cursor:pointer;
+      border-radius:10px;
+      margin-top:30px;
+      margin-bottom:15px
+    }
+    
+    #submit:hover{
+      background-image:linear-gradient(to right,rgb(209,56,0),rgb(214,146,0))
+    }
+    
+    .gen+.input-box{
+      margin-top:30px
+    }

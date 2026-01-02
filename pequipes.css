@@ -1,0 +1,126 @@
+body {
+  background-image: url('wal.png');
+  background-size: cover;   
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    color: #c00000;
+}
+
+a.botao {
+    display: inline-block;  /* faz o link caber só no tamanho do vídeo */
+    text-decoration: none;  /* remove sublinhado */
+    position: relative;
+}
+
+.videos-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.videos-container > * {
+    margin-bottom: 50px; /* substitui o gap */
+}
+
+
+.video-wrapper {
+    text-align: center;
+    font-size: 0; /* remove espaço entre inline-block */
+}
+
+.video-wrapper > * {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px; /* substitui o gap */
+    font-size: initial; /* volta o tamanho da fonte dentro dos elementos */
+}
+
+.video-wrapper video {
+    width: 784px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* pilotos sem fundo */
+.pilot-left, .pilot-right {
+    width: 130px;
+    height: auto;
+}
+
+
+.videos {
+    text-align: center;
+    padding: 20px;
+}
+
+video {
+    position: relative;
+    width: 784px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    top: -10px;
+    transition: transform 0.3s ease;
+}
+
+.mclaren:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px #ff9900;
+}
+
+.ferrari:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px #990000;
+}
+
+.willians:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px #0051ff;
+}
+
+.redbull:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px #006eff;
+}
+
+.racing:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px #2e8fff;
+}
+
+.alpine:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px #00c3ff;
+}
+
+.mercedes:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px #00ffea;
+}
+
+.aston:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px #00ff88;
+}
+
+.sauber:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px #2bff00;
+}
+
+.haas:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px #8a8a8a;
+}

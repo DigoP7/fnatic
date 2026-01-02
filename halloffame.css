@@ -1,0 +1,109 @@
+body {
+background-image: url('wal.png');
+background-size: cover;   
+background-position: center;  
+background-repeat: no-repeat;
+background-attachment: fixed;
+color: #c00000;
+margin: 0;
+text-align: center;
+font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Efeito para as fotos do Hall da Fama */
+.cartao-lenda img {
+width: 100%;
+height: 250px;
+object-fit: cover;
+    
+/* Deixa a foto com aspecto antigo/dourado */
+filter: sepia(80%) contrast(1.2); 
+transition: filter 0.4s ease, transform 0.4s ease; 
+border: 4px double #ffd700; /* Borda dupla dourada */
+}
+
+/* Ao passar o mouse, a foto fica colorida e original */
+.cartao-lenda:hover img {
+filter: none;
+transform: scale(1.05);
+}
+/* Container da Galeria */
+.galeria-lendas {
+width: 100%;
+max-width: 1200px;
+margin: 0 auto 50px;
+text-decoration: none;
+text-align: center; /* Centraliza os cards na tela */
+    
+    /* TRUQUE ESSENCIAL: Remove espaços brancos entre blocos inline */
+font-size: 0; 
+}
+
+/* O Cartão Individual */
+.card-lenda {
+/* Alinhamento em Grade (4 por linha) */
+display: inline-block;
+width: 22%; /* 22% * 4 = 88% (Sobra 12% para margens) */
+margin: 20px 1.5%; /* Espaçamento generoso */
+vertical-align: top; /* Alinha pelo topo */
+    
+/* Restaura o tamanho da fonte (que zeramos no pai) */
+font-size: 16px; 
+    
+/* Visual do Cartão */
+background-color: #111;
+border-radius: 8px;
+padding: 0;
+box-sizing: border-box;
+transition: transform 0.3s ease; /* Animação suave */
+}
+
+/* Efeito ao passar o mouse no cartão */
+.card-lenda:hover {
+transform: translateY(-10px); /* Sobe um pouquinho */
+background-color: #1a1a1a;
+}
+
+/* A Moldura da Foto */
+.moldura-dourada img {
+width: 100%;
+height: 200px; /* Altura fixa para todas as fotos ficarem iguais */
+object-fit: cover; /* Corta a imagem para caber sem distorcer */
+border: 3px double #ffd700; /* Borda dupla dourada */
+border-radius: 4px;  
+/* Efeito Retrô (Preto e Branco) */
+filter: grayscale(100%) sepia(30%);
+transition: filter 0.4s ease;
+}
+
+/* Ao passar o mouse, a foto fica colorida */
+.card-lenda:hover img {
+filter: none;
+border-color: #fff; /* Borda fica branca */
+}
+
+/* Textos */
+.card-lenda h3 {
+color: #ffd700; /* Título Dourado */
+margin: 15px 0 5px;
+font-family: 'Times New Roman', serif; /* Fonte clássica */
+font-size: 1.2em;
+}
+
+.card-lenda .titulos {
+color: #ccc;
+font-size: 0.9em;
+margin: 0;
+}
+
+.card-lenda a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    padding: 15px; /* O padding que estava no card */
+    box-sizing: border-box;
+}
+
+

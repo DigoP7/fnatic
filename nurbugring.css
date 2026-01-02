@@ -1,0 +1,63 @@
+body {
+  background-image: url('paper.jpg');
+  background-size: cover;   
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px #000000;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: #c00000;
+}
+
+.galeria-container {
+    width: 100%;
+    text-align: center;
+}
+
+.coluna {
+    display: inline-block;
+    width: 75%;       /* controla o espaçamento */
+    vertical-align: top;
+    text-align: center;
+}
+
+.coluna h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #c00000;
+    font-weight: bold;
+}
+
+.foto {
+    width: 90%;       /* deixa as fotos iguais */
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+#foto-niki {
+    width: 80%;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
