@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/cadastro.css" />
+</head>
+<body>
+    <div class="elementos">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Cadastro FnaticF1</legend>
+                
+                <div class="input-box">
+                    <input type="text" name="nome" id="nome" class="cadastro" required />
+                    <label for="nome" class="labelinput">Nome Completo</label>
+                </div>
+                
+                <div class="input-box">
+                    <input type="text" name="email" id="email" class="cadastro" required />
+                    <label for="email" class="labelinput">E-Mail</label>
+                </div>
+                
+                <div class="input-box">
+                    <input type="password" name="senha" id="senha" class="cadastro" required />
+                    <label for="senha" class="labelinput">Senha</label>
+                </div>
+                
+                <div class="input-box">
+                    <input type="password" name="senha" id="rsenha" class="cadastro" required />
+                    <label for="rsenha" class="labelinput">Confirme Sua Senha</label>
+                </div>
+                
+                <div class="input-box">
+                    <input type="tel" name="tel" id="tel" class="cadastro" required />
+                    <label for="tel" class="labelinput">Telefone</label>
+                </div>
+                
+                <div class="gen">
+                    <p>Gênero</p>
+                    <input type="radio" name="genero" id="feminino" value="feminino" required />
+                    <label for="feminino">Feminino</label>
+                    
+                    <input type="radio" name="genero" id="masculino" value="masculino" required />
+                    <label for="masculino">Masculino</label>
+                    
+                    <input type="radio" name="genero" id="outro" value="outro" required />
+                    <label for="outro">Outro</label>
+
+                    <label for="data_nascimento">Data De Nascimento</label>
+                    <input type="date" name="data_nascimento" id="data_nascimento" required />
+                </div>
+                
+                <div class="input-box">
+                    <input type="text" name="pais" id="pais" class="cadastro" required />
+                    <label for="pais" class="labelinput">País De Residência</label>
+                </div>
+                
+                <div class="input-box">
+                    <input type="text" name="cidade" id="cidade" class="cadastro" required />
+                    <label for="cidade" class="labelinput">Cidade</label>
+                </div>
+                
+                <div class="input-box">
+                    <input type="text" name="estado" id="estado" class="cadastro" required />
+                    <label for="estado" class="labelinput">Estado</label>
+                </div>
+                
+                <input type="submit" name="submit" id="submit" />
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
